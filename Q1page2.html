@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html>
+    <head>
+     <style>
+    /* TABLE STYLE */
+         .a{text-align: center;
+        background-color:gainsboro;
+        border-top: solid;
+       }
+       .b{
+           background-color:rgba(240, 128, 128, 0.541);
+       }
+       .c{
+        background-color:yellow;
+       }
+       .d{
+        color:red;
+       }
+       .e{
+         border: 1px solid black;}
+       .f{
+           background-color: red;
+       }
+       .g{
+        background-color: red;
+        border:none;text-align: center;
+        width: 50px;
+        font-weight: bold;}
+    </style>
+
+    <!--Validation-->
+
+      <script type="text/JavaScript">
+        function validation1(x){
+            var temp=document.getElementById(x).value;
+            if(temp>1){
+                alert("Maximum mark is 1");
+                return false;
+            }
+            else{
+                if(temp<0){
+                    alert("Minimum mark is 0");
+                    return false;
+                }
+            }
+            if(temp>=0 && temp<=1) return true;
+        }
+        function validation3(y){
+            var temp=document.getElementById(y).value;
+            if(temp>3){
+                alert("Maximum mark is 3");
+                return false;
+            }
+            else{
+                if(temp<0){
+                    alert("Minimum mark is 0");
+                    return false;
+                }
+            }
+            if(temp>=0 && temp<=3) return true;
+        }
+        </script>
+    </head>
+    <body>
+        <table>
+            <tr>
+                <th class="a" width="1200" colspan="16">1 INTERNAL EXAM CO ATTAINMENT</th>
+            </tr>
+            <tr>
+                <th style=" background-color:burlywood;">Course Outcome</th>
+                <th class="c">CO 1</th>
+                <th class="c">CO 1</th>
+                <th class="c">CO 1</th>
+                <th class="c">CO 2</th>
+                <th class="c">CO 2</th>
+                <th class="c">CO 2</th>
+                <th class="c">CO 1</th>
+                <th class="c">CO 1</th>
+                <th class="c">CO 2</th>
+                <th class="c">CO 2</th>
+                <th class="c">CO 1</th>
+                <th class="c">CO 1</th>
+                <th class="c">CO 2</th>
+                <th class="c">CO 2</th>
+                <th>&emsp;</th>
+            </tr>
+            <tr>
+                <th style="background-color:gainsboro;">Marks</th>
+                <th class="b">1</th>
+                <th class="b">1</th>
+                <th class="b">1</th>
+                <th class="b">1</th>
+                <th class="b">1</th>
+                <th class="b">1</th>
+                <th class="b">3</th>
+                <th class="b">3</th>
+                <th class="b">3</th>
+                <th class="b">3</th>
+                <th class="b">3</th>
+                <th class="b">3</th>
+                <th class="b">3</th>
+                <th class="b">3</th>
+                <th>&emsp;</th>
+            </tr>
+            <tr>
+                <th style="background-color:rgba(100, 148, 237, 0.801);">Marks</th>
+                <th class="b">0.5</th>
+                <th class="b">0.5</th>
+                <th class="b">0.5</th>
+                <th class="b">0.5</th>
+                <th class="b">0.5</th>
+                <th class="b">0.5</th>
+                <th class="b">1.5</th>
+                <th class="b">1.5</th>
+                <th class="b">1.5</th>
+                <th class="b">1.5</th>
+                <th class="b">1.5</th>
+                <th class="b">1.5</th>
+                <th class="b">1.5</th>
+                <th class="b">1.5</th>
+                <th>&emsp;</th>
+            </tr>
+            <tr>
+                <th class="d">H.No.</th>
+                <th class="d">1</th>
+                <th class="d">2</th>
+                <th class="d">3</th>
+                <th class="d">4</th>
+                <th class="d">5</th>
+                <th class="d">6</th>
+                <th class="d">7</th>
+                <th class="d">8</th>
+                <th class="d">9</th>
+                <th class="d">10</th>
+                <th class="d">11a</th>
+                <th class="d">11b</th>
+                <th class="d">12a</th>
+                <th class="d">12b</th>
+                <th class="d">T</th>
+            </tr>
+<!--ROLL NO'S-->
+            <tr>
+                <th class="e">1602-19-733-001</th>
+                <th class="e f"><input type="number" class="g" id="1q1" onblur="validation1(id)"></th>
+                <th class="e f"><input type="number" class="g" id="1q2" onblur="validation1(id)"></th>                
+                <th class="e f"><input type="number" class="g" id="1q3" onblur="validation1(id)"></th>                
+                <th class="e f"><input type="number" class="g" id="1q4" onblur="validation1(id)"></th>                
+                <th class="e f"><input type="number" class="g" id="1q5" onblur="validation1(id)"></th>
+                <th class="e f"><input type="number" class="g" id="1q6" onblur="validation1(id)"></th>
+                <th class="e f"><input type="number" class="g" id="1q7" onblur="validation3(id)"></th>
+                <th class="e f"><input type="number" class="g" id="1q8" onblur="validation3(id)"></th>
+                <th class="e f"><input type="number" class="g" id="1q9" onblur="validation3(id)"></th>
+                <th class="e f"><input type="number" class="g" id="1q10" onblur="validation3(id)"></th>
+                <th class="e f"><input type="number" class="g" id="1q11a" onblur="validation3(id)"></th>
+                <th class="e f"><input type="number" class="g" id="1q11b" onblur="validation3(id)"></th>
+                <th class="e f"><input type="number" class="g" id="1q12a" onblur="validation3(id)"></th>
+                <th class="e f"><input type="number" class="g" id="1q12b" onblur="validation3(id)"></th>
+                <th>&emsp;</th>
+            </tr> 
+            <tr>
+                <th class="e">1602-19-733-002</th>
+              <th class="e f"><input type="number" class="g" id="2q1" onblur="validation1(id)"></th>
+                <th class="e f"><input type="number" class="g" id="2q2" onblur="validation1(id)"></th>                
+                <th class="e f"><input type="number" class="g" id="2q3" onblur="validation1(id)"></th>                
+                <th class="e f"><input type="number" class="g" id="2q4" onblur="validation1(id)"></th>                
+                <th class="e f"><input type="number" class="g" id="2q5" onblur="validation1(id)"></th>
+                <th class="e f"><input type="number" class="g" id="2q6" onblur="validation1(id)"></th>
+                <th class="e f"><input type="number" class="g" id="2q7" onblur="validation3(id)"></th>
+                <th class="e f"><input type="number" class="g" id="2q8" onblur="validation3(id)"></th>
+                <th class="e f"><input type="number" class="g" id="2q9" onblur="validation3(id)"></th>
+                <th class="e f"><input type="number" class="g" id="2q10" onblur="validation3(id)"></th>
+                <th class="e f"><input type="number" class="g" id="2q11a" onblur="validation3(id)"></th>
+                <th class="e f"><input type="number" class="g" id="2q11b" onblur="validation3(id)"></th>
+                <th class="e f"><input type="number" class="g" id="2q12a" onblur="validation3(id)"></th>
+                <th class="e f"><input type="number" class="g" id="2q12b" onblur="validation3(id)"></th>
+                <th>&emsp;</th>
+            </tr> 
+            <tr>
+                <th class="e">1602-19-733-003</th>
+                <th class="e f"><input type="number" class="g" id="3q1" onblur="validation1(id)"></th>
+                <th class="e f"><input type="number" class="g" id="3q2" onblur="validation1(id)"></th>                
+                <th class="e f"><input type="number" class="g" id="3q3" onblur="validation1(id)"></th>                
+                <th class="e f"><input type="number" class="g" id="3q4" onblur="validation1(id)"></th>                
+                <th class="e f"><input type="number" class="g" id="3q5" onblur="validation1(id)"></th>
+                <th class="e f"><input type="number" class="g" id="3q6" onblur="validation1(id)"></th>
+                <th class="e f"><input type="number" class="g" id="3q7" onblur="validation3(id)"></th>
+                <th class="e f"><input type="number" class="g" id="3q8" onblur="validation3(id)"></th>
+                <th class="e f"><input type="number" class="g" id="3q9" onblur="validation3(id)"></th>
+                <th class="e f"><input type="number" class="g" id="3q10" onblur="validation3(id)"></th>
+                <th class="e f"><input type="number" class="g" id="3q11a" onblur="validation3(id)"></th>
+                <th class="e f"><input type="number" class="g" id="3q11b" onblur="validation3(id)"></th>
+                <th class="e f"><input type="number" class="g" id="3q12a" onblur="validation3(id)"></th>
+                <th class="e f"><input type="number" class="g" id="3q12b" onblur="validation3(id)"></th>
+                <th>&emsp;</th>
+            </tr> 
+            <tr>
+                <th class="e">1602-19-733-004</th>
+                <th class="e f"><input type="number" class="g" id="4q1" onblur="validation1(id)"></th>
+                <th class="e f"><input type="number" class="g" id="4q2" onblur="validation1(id)"></th>                
+                <th class="e f"><input type="number" class="g" id="4q3" onblur="validation1(id)"></th>                
+                <th class="e f"><input type="number" class="g" id="4q4" onblur="validation1(id)"></th>                
+                <th class="e f"><input type="number" class="g" id="4q5" onblur="validation1(id)"></th>
+                <th class="e f"><input type="number" class="g" id="4q6" onblur="validation1(id)"></th>
+                <th class="e f"><input type="number" class="g" id="4q7" onblur="validation3(id)"></th>
+                <th class="e f"><input type="number" class="g" id="4q8" onblur="validation3(id)"></th>
+                <th class="e f"><input type="number" class="g" id="4q9" onblur="validation3(id)"></th>
+                <th class="e f"><input type="number" class="g" id="4q10" onblur="validation3(id)"></th>
+                <th class="e f"><input type="number" class="g" id="4q11a" onblur="validation3(id)"></th>
+                <th class="e f"><input type="number" class="g" id="4q11b" onblur="validation3(id)"></th>
+                <th class="e f"><input type="number" class="g" id="4q12a" onblur="validation3(id)"></th>
+                <th class="e f"><input type="number" class="g" id="4q12b" onblur="validation3(id)"></th>
+                <th>&emsp;</th>
+            </tr> 
+            <tr>
+                <th class="e">1602-19-733-005</th>
+                <th class="e f"><input type="number" class="g" id="5q1" onblur="validation1(id)"></th>
+                <th class="e f"><input type="number" class="g" id="5q2" onblur="validation1(id)"></th>                
+                <th class="e f"><input type="number" class="g" id="5q3" onblur="validation1(id)"></th>                
+                <th class="e f"><input type="number" class="g" id="5q4" onblur="validation1(id)"></th>                
+                <th class="e f"><input type="number" class="g" id="5q5" onblur="validation1(id)"></th>
+                <th class="e f"><input type="number" class="g" id="5q6" onblur="validation1(id)"></th>
+                <th class="e f"><input type="number" class="g" id="5q7" onblur="validation3(id)"></th>
+                <th class="e f"><input type="number" class="g" id="5q8" onblur="validation3(id)"></th>
+                <th class="e f"><input type="number" class="g" id="5q9" onblur="validation3(id)"></th>
+                <th class="e f"><input type="number" class="g" id="5q10" onblur="validation3(id)"></th>
+                <th class="e f"><input type="number" class="g" id="5q11a" onblur="validation3(id)"></th>
+                <th class="e f"><input type="number" class="g" id="5q11b" onblur="validation3(id)"></th>
+                <th class="e f"><input type="number" class="g" id="5q12a" onblur="validation3(id)"></th>
+                <th class="e f"><input type="number" class="g" id="5q12b" onblur="validation3(id)"></th>
+                <th>&emsp;</th>
+            </tr> 
+            <tr>
+                <th class="e">1602-19-733-006</th>
+                <th class="e f"><input type="number" class="g" id="6q1" onblur="validation1(id)"></th>
+                <th class="e f"><input type="number" class="g" id="6q2" onblur="validation1(id)"></th>                
+                <th class="e f"><input type="number" class="g" id="6q3" onblur="validation1(id)"></th>                
+                <th class="e f"><input type="number" class="g" id="6q4" onblur="validation1(id)"></th>                
+                <th class="e f"><input type="number" class="g" id="6q5" onblur="validation1(id)"></th>
+                <th class="e f"><input type="number" class="g" id="6q6" onblur="validation1(id)"></th>
+                <th class="e f"><input type="number" class="g" id="6q7" onblur="validation3(id)"></th>
+                <th class="e f"><input type="number" class="g" id="6q8" onblur="validation3(id)"></th>
+                <th class="e f"><input type="number" class="g" id="6q9" onblur="validation3(id)"></th>
+                <th class="e f"><input type="number" class="g" id="6q10" onblur="validation3(id)"></th>
+                <th class="e f"><input type="number" class="g" id="6q11a" onblur="validation3(id)"></th>
+                <th class="e f"><input type="number" class="g" id="6q11b" onblur="validation3(id)"></th>
+                <th class="e f"><input type="number" class="g" id="6q12a" onblur="validation3(id)"></th>
+                <th class="e f"><input type="number" class="g" id="6q12b" onblur="validation3(id)"></th>
+                <th>&emsp;</th>
+            </tr> 
+            <tr>
+                <th class="e">1602-19-733-007</th>
+                <th class="e f"><input type="number" class="g" id="7q1" onblur="validation1(id)"></th>
+                <th class="e f"><input type="number" class="g" id="7q2" onblur="validation1(id)"></th>                
+                <th class="e f"><input type="number" class="g" id="7q3" onblur="validation1(id)"></th>                
+                <th class="e f"><input type="number" class="g" id="7q4" onblur="validation1(id)"></th>                
+                <th class="e f"><input type="number" class="g" id="7q5" onblur="validation1(id)"></th>
+                <th class="e f"><input type="number" class="g" id="7q6" onblur="validation1(id)"></th>
+                <th class="e f"><input type="number" class="g" id="7q7" onblur="validation3(id)"></th>
+                <th class="e f"><input type="number" class="g" id="7q8" onblur="validation3(id)"></th>
+                <th class="e f"><input type="number" class="g" id="7q9" onblur="validation3(id)"></th>
+                <th class="e f"><input type="number" class="g" id="7q10" onblur="validation3(id)"></th>
+                <th class="e f"><input type="number" class="g" id="7q11a" onblur="validation3(id)"></th>
+                <th class="e f"><input type="number" class="g" id="7q11b" onblur="validation3(id)"></th>
+                <th class="e f"><input type="number" class="g" id="7q12a" onblur="validation3(id)"></th>
+                <th class="e f"><input type="number" class="g" id="7q12b" onblur="validation3(id)"></th>
+                <th>&emsp;</th>
+            </tr> 
+            <tr>
+                <th class="e">1602-19-733-008</th>
+                <th class="e f"><input type="number" class="g" id="8q1" onblur="validation1(id)"></th>
+                <th class="e f"><input type="number" class="g" id="8q2" onblur="validation1(id)"></th>                
+                <th class="e f"><input type="number" class="g" id="8q3" onblur="validation1(id)"></th>                
+                <th class="e f"><input type="number" class="g" id="8q4" onblur="validation1(id)"></th>                
+                <th class="e f"><input type="number" class="g" id="8q5" onblur="validation1(id)"></th>
+                <th class="e f"><input type="number" class="g" id="8q6" onblur="validation1(id)"></th>
+                <th class="e f"><input type="number" class="g" id="8q7" onblur="validation3(id)"></th>
+                <th class="e f"><input type="number" class="g" id="8q8" onblur="validation3(id)"></th>
+                <th class="e f"><input type="number" class="g" id="8q9" onblur="validation3(id)"></th>
+                <th class="e f"><input type="number" class="g" id="8q10" onblur="validation3(id)"></th>
+                <th class="e f"><input type="number" class="g" id="8q11a" onblur="validation3(id)"></th>
+                <th class="e f"><input type="number" class="g" id="8q11b" onblur="validation3(id)"></th>
+                <th class="e f"><input type="number" class="g" id="8q12a" onblur="validation3(id)"></th>
+                <th class="e f"><input type="number" class="g" id="8q12b" onblur="validation3(id)"></th>
+                <th>&emsp;</th>
+            </tr> 
+            <tr>
+                <th class="e">1602-19-733-009</th>
+                <th class="e f"><input type="number" class="g" id="9q1" onblur="validation1(id)"></th>
+                <th class="e f"><input type="number" class="g" id="9q2" onblur="validation1(id)"></th>                
+                <th class="e f"><input type="number" class="g" id="9q3" onblur="validation1(id)"></th>                
+                <th class="e f"><input type="number" class="g" id="9q4" onblur="validation1(id)"></th>                
+                <th class="e f"><input type="number" class="g" id="9q5" onblur="validation1(id)"></th>
+                <th class="e f"><input type="number" class="g" id="9q6" onblur="validation1(id)"></th>
+                <th class="e f"><input type="number" class="g" id="9q7" onblur="validation3(id)"></th>
+                <th class="e f"><input type="number" class="g" id="9q8" onblur="validation3(id)"></th>
+                <th class="e f"><input type="number" class="g" id="9q9" onblur="validation3(id)"></th>
+                <th class="e f"><input type="number" class="g" id="9q10" onblur="validation3(id)"></th>
+                <th class="e f"><input type="number" class="g" id="9q11a" onblur="validation3(id)"></th>
+                <th class="e f"><input type="number" class="g" id="9q11b" onblur="validation3(id)"></th>
+                <th class="e f"><input type="number" class="g" id="9q12a" onblur="validation3(id)"></th>
+                <th class="e f"><input type="number" class="g" id="9q12b" onblur="validation3(id)"></th>
+                <th>&emsp;</th>
+            </tr> 
+            <tr>
+                <th class="e">1602-19-733-010</th>
+                <th class="e f"><input type="number" class="g" id="10q1" onblur="validation1(id)"></th>
+                <th class="e f"><input type="number" class="g" id="10q2" onblur="validation1(id)"></th>                
+                <th class="e f"><input type="number" class="g" id="10q3" onblur="validation1(id)"></th>                
+                <th class="e f"><input type="number" class="g" id="10q4" onblur="validation1(id)"></th>                
+                <th class="e f"><input type="number" class="g" id="10q5" onblur="validation1(id)"></th>
+                <th class="e f"><input type="number" class="g" id="10q6" onblur="validation1(id)"></th>
+                <th class="e f"><input type="number" class="g" id="10q7" onblur="validation3(id)"></th>
+                <th class="e f"><input type="number" class="g" id="10q8" onblur="validation3(id)"></th>
+                <th class="e f"><input type="number" class="g" id="10q9" onblur="validation3(id)"></th>
+                <th class="e f"><input type="number" class="g" id="10q10" onblur="validation3(id)"></th>
+                <th class="e f"><input type="number" class="g" id="10q11a" onblur="validation3(id)"></th>
+                <th class="e f"><input type="number" class="g" id="10q11b" onblur="validation3(id)"></th>
+                <th class="e f"><input type="number" class="g" id="10q12a" onblur="validation3(id)"></th>
+                <th class="e f"><input type="number" class="g" id="10q12b" onblur="validation3(id)"></th>
+                <th>&emsp;</th>
+            </tr> 
+            <tr>
+                <th class="e">1602-19-733-011</th>
+                <th class="e f"><input type="number" class="g" id="11q1" onblur="validation1(id)"></th>
+                <th class="e f"><input type="number" class="g" id="11q2" onblur="validation1(id)"></th>                
+                <th class="e f"><input type="number" class="g" id="11q3" onblur="validation1(id)"></th>                
+                <th class="e f"><input type="number" class="g" id="11q4" onblur="validation1(id)"></th>                
+                <th class="e f"><input type="number" class="g" id="11q5" onblur="validation1(id)"></th>
+                <th class="e f"><input type="number" class="g" id="11q6" onblur="validation1(id)"></th>
+                <th class="e f"><input type="number" class="g" id="11q7" onblur="validation3(id)"></th>
+                <th class="e f"><input type="number" class="g" id="11q8" onblur="validation3(id)"></th>
+                <th class="e f"><input type="number" class="g" id="11q9" onblur="validation3(id)"></th>
+                <th class="e f"><input type="number" class="g" id="11q10" onblur="validation3(id)"></th>
+                <th class="e f"><input type="number" class="g" id="11q11a" onblur="validation3(id)"></th>
+                <th class="e f"><input type="number" class="g" id="11q11b" onblur="validation3(id)"></th>
+                <th class="e f"><input type="number" class="g" id="11q12a" onblur="validation3(id)"></th>
+                <th class="e f"><input type="number" class="g" id="11q12b" onblur="validation3(id)"></th>>
+                <th>&emsp;</th>
+            </tr> 
+            <tr>
+                <th class="e">1602-19-733-012</th>
+                <th class="e f"><input type="number" class="g" id="12q1" onblur="validation1(id)"></th>
+                <th class="e f"><input type="number" class="g" id="12q2" onblur="validation1(id)"></th>                
+                <th class="e f"><input type="number" class="g" id="12q3" onblur="validation1(id)"></th>                
+                <th class="e f"><input type="number" class="g" id="12q4" onblur="validation1(id)"></th>                
+                <th class="e f"><input type="number" class="g" id="12q5" onblur="validation1(id)"></th>
+                <th class="e f"><input type="number" class="g" id="12q6" onblur="validation1(id)"></th>
+                <th class="e f"><input type="number" class="g" id="12q7" onblur="validation3(id)"></th>
+                <th class="e f"><input type="number" class="g" id="12q8" onblur="validation3(id)"></th>
+                <th class="e f"><input type="number" class="g" id="12q9" onblur="validation3(id)"></th>
+                <th class="e f"><input type="number" class="g" id="12q10" onblur="validation3(id)"></th>
+                <th class="e f"><input type="number" class="g" id="12q11a" onblur="validation3(id)"></th>
+                <th class="e f"><input type="number" class="g" id="12q11b" onblur="validation3(id)"></th>
+                <th class="e f"><input type="number" class="g" id="12q12a" onblur="validation3(id)"></th>
+                <th class="e f"><input type="number" class="g" id="12q12b" onblur="validation3(id)"></th>
+                <th>&emsp;</th>
+            </tr> 
+            <tr>
+                <th class="e">1602-19-733-013</th>
+                <th class="e f"><input type="number" class="g" id="13q1" onblur="validation1(id)"></th>
+                <th class="e f"><input type="number" class="g" id="13q2" onblur="validation1(id)"></th>                
+                <th class="e f"><input type="number" class="g" id="13q3" onblur="validation1(id)"></th>                
+                <th class="e f"><input type="number" class="g" id="13q4" onblur="validation1(id)"></th>                
+                <th class="e f"><input type="number" class="g" id="13q5" onblur="validation1(id)"></th>
+                <th class="e f"><input type="number" class="g" id="13q6" onblur="validation1(id)"></th>
+                <th class="e f"><input type="number" class="g" id="13q7" onblur="validation3(id)"></th>
+                <th class="e f"><input type="number" class="g" id="13q8" onblur="validation3(id)"></th>
+                <th class="e f"><input type="number" class="g" id="13q9" onblur="validation3(id)"></th>
+                <th class="e f"><input type="number" class="g" id="13q10" onblur="validation3(id)"></th>
+                <th class="e f"><input type="number" class="g" id="13q11a" onblur="validation3(id)"></th>
+                <th class="e f"><input type="number" class="g" id="13q11b" onblur="validation3(id)"></th>
+                <th class="e f"><input type="number" class="g" id="13q12a" onblur="validation3(id)"></th>
+                <th class="e f"><input type="number" class="g" id="13q12b" onblur="validation3(id)"></th>
+                <th>&emsp;</th>
+            </tr> 
+            <tr>
+                <th class="e">1602-19-733-014</th>
+                <th class="e f"><input type="number" class="g" id="14q1" onblur="validation1(id)"></th>
+                <th class="e f"><input type="number" class="g" id="14q2" onblur="validation1(id)"></th>                
+                <th class="e f"><input type="number" class="g" id="14q3" onblur="validation1(id)"></th>                
+                <th class="e f"><input type="number" class="g" id="14q4" onblur="validation1(id)"></th>                
+                <th class="e f"><input type="number" class="g" id="14q5" onblur="validation1(id)"></th>
+                <th class="e f"><input type="number" class="g" id="14q6" onblur="validation1(id)"></th>
+                <th class="e f"><input type="number" class="g" id="14q7" onblur="validation3(id)"></th>
+                <th class="e f"><input type="number" class="g" id="14q8" onblur="validation3(id)"></th>
+                <th class="e f"><input type="number" class="g" id="14q9" onblur="validation3(id)"></th>
+                <th class="e f"><input type="number" class="g" id="14q10" onblur="validation3(id)"></th>
+                <th class="e f"><input type="number" class="g" id="14q11a" onblur="validation3(id)"></th>
+                <th class="e f"><input type="number" class="g" id="14q11b" onblur="validation3(id)"></th>
+                <th class="e f"><input type="number" class="g" id="14q12a" onblur="validation3(id)"></th>
+                <th class="e f"><input type="number" class="g" id="14q12b" onblur="validation3(id)"></th> 
+                <th>&emsp;</th>
+            </tr> 
+            <tr>
+                <th class="e">1602-19-733-015</th>
+                <th class="e f"><input type="number" class="g" id="15q1" onblur="validation1(id)"></th>
+                <th class="e f"><input type="number" class="g" id="15q2" onblur="validation1(id)"></th>                
+                <th class="e f"><input type="number" class="g" id="15q3" onblur="validation1(id)"></th>                
+                <th class="e f"><input type="number" class="g" id="15q4" onblur="validation1(id)"></th>                
+                <th class="e f"><input type="number" class="g" id="15q5" onblur="validation1(id)"></th>
+                <th class="e f"><input type="number" class="g" id="15q6" onblur="validation1(id)"></th>
+                <th class="e f"><input type="number" class="g" id="15q7" onblur="validation3(id)"></th>
+                <th class="e f"><input type="number" class="g" id="15q8" onblur="validation3(id)"></th>
+                <th class="e f"><input type="number" class="g" id="15q9" onblur="validation3(id)"></th>
+                <th class="e f"><input type="number" class="g" id="15q10" onblur="validation3(id)"></th>
+                <th class="e f"><input type="number" class="g" id="15q11a" onblur="validation3(id)"></th>
+                <th class="e f"><input type="number" class="g" id="15q11b" onblur="validation3(id)"></th>
+                <th class="e f"><input type="number" class="g" id="15q12a" onblur="validation3(id)"></th>
+                <th class="e f"><input type="number" class="g" id="15q12b" onblur="validation3(id)"></th>
+                <th>&emsp;</th>
+            </tr> 
+        </table>
+        <br/><a href="Asg1_q1page3.html"><input type="submit"></a>
+    </body>
+</html>
