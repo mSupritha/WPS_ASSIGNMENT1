@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <h1 style="text-align: center;">Player-IPL Franchise.</h1>
+    <style>
+      body{
+           margin: 40px 40px 40px 40px;
+            background-color: lightgreen;
+            border-top:solid;
+            border-bottom:solid;
+          }
+    </style>
+    <script type="text/JavaScript">
+      function onImg1(x) { document.getElementById("1").src="/img/a124.png";}
+      function outImg1(x) { document.getElementById("1").src="/img/a121.png"; }
+      function onImg2(x) { document.getElementById("2").src="/img/a125.png";}
+      function outImg2(x) { document.getElementById("2").src="/img/a122.png"; }
+      function onImg3(x) { document.getElementById("3").src="/img/a126.png";}
+      function outImg3(x) { document.getElementById("3").src="/img/a123.png"; }
+    </script>
+    </head>
+    <body>
+     <table>
+       <tr>
+         <td width="600"><img id="1" align="left"  onmouseover="onImg1(this)" onmouseout="outImg1(this)" border="0" src="/img/a121.png"  width="400" height="400"></td>
+         <td width="400"><img id="2" align="center" onmouseover="onImg2(this)" onmouseout="outImg2(this)" border="0" src="/img/a122.png"  width="400" height="400"></td>
+         <td width="600"><img id="3" align="right" onmouseover="onImg3(this)" onmouseout="outImg3(this)" border="0" src="/img/a123.png"  width="400" height="400"></td>
+      </tr>
+    </table>
+    </body>
+</html>
